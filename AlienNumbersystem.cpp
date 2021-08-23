@@ -1,27 +1,30 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int main()
+string succ_alien(string input, string NumberSys)
 {
-    vector<char> alienNum = {'!', '@', '^', '&', '*'};
-    string n, number = "", nextNum = "";
-    cin>>n;
-    for(int i=0; i<n.size(); i++)
+    vector<char> alienNumSys;
+    string NumberInput = "", nextNum = "";
+    for(int i=0; i<NumberSys.size(); i++)
     {
-        auto it = find(alienNum.begin(), alienNum.end(), n[i]);
-        number += to_string(it - alienNum.begin());
+        alienNumSys.push_back(NumberSys[i]);
     }
-    //cout<<number<<endl<<number.size()<<endl;
-    int carry=0, curr =0;
-    for(int i = number.size()-1; i>=0; i--)
+
+    for(int i=0; i<input.size(); i++)
     {
-        curr = (int)number[i] - 48 + carry; 
-        //cout<<curr<<" ";
-        if(i == number.size() -1)
+        auto it = find(alienNumSys.begin(), alienNumSys.end(), input[i]);
+        NumberInput += to_string(it - alienNumSys.begin());
+    }
+
+    int carry=0, curr =0;
+    for(int i = NumberInput.size()-1; i>=0; i--)
+    {
+        curr = (int)NumberInput[i] - 48 + carry; 
+        if(i == NumberInput.size() -1)
         {
             curr += 1;
         }
-        if(curr == alienNum.size())
+        if(curr == alienNumSys.size())
         {
             curr = 0;
             carry = 1;
@@ -30,10 +33,21 @@ int main()
         {
             carry = 0;
         }
-        //cout<<curr<<"curr ";
-        nextNum += alienNum[curr];
+        nextNum += alienNumSys[curr];
     }
     reverse(nextNum.begin(), nextNum.end());
-    cout<<nextNum;
+    return nextNum;
+}
+
+
+int main()
+{
+    string str, alienNum;
+    cout<<"Enter Number System:\n";
+    cin>>alienNum;
+    cout<<"Enter a number of above number System:\n";
+    cin>>str;
+    cout<<"Next Number According to Above Alien Number system:\n";
+    cout<<succ_alien(str, alienNum);
     return 0;
 }
