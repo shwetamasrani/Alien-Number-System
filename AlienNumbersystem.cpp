@@ -1,6 +1,19 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// To remove trailing zeros
+string remove_zero(string str)
+{
+    int i = 0;
+    while(str[i] == '0')
+        i++;
+
+    if(i == str.size()) 
+        i--;
+    str.erase(0, i);
+    return str;
+}
+
 // Function to find the successor of given input number in New Alien Number system provided by user
 string succ_alien(string input, string NumberSys)
 {
@@ -18,6 +31,12 @@ string succ_alien(string input, string NumberSys)
     {
         auto it = find(alienNumSys.begin(), alienNumSys.end(), input[i]);
         NumberInput += to_string(it - alienNumSys.begin());
+    }
+
+    // Removing Trailing Zeros
+    if(NumberInput.size() > 1)
+    {
+        NumberInput = remove_zero(NumberInput);
     }
 
     // Adding 1 to the above number
