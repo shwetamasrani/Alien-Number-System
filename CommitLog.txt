@@ -1,20 +1,32 @@
-commit 866bf3cf5abdbefd7ecb0177eeac74bc460dd049 (HEAD -> main, origin/main)              
-Author: shwetamasrani <shwetamasrani19@gmail.com>                                        
-Date:   Mon Aug 23 22:12:08 2021 +0530                                                                                                                                                
-Added function to clean input by removing leading zeros                                                                                                                       
-commit 1d4705731902ff136b705be6541b450872ba911d                                          
-Author: shwetamasrani <shwetamasrani19@gmail.com>                                        
-Date:   Mon Aug 23 22:02:25 2021 +0530                                                                                                                                                
-Added Comments for readability                                                                                                                                                
-commit df62c0d7b4aad2c7fa239b8e7ba07131f77662fb                                          
-Author: Shweta Masrani <shwetamasrani19@gmail.com>                                       
-Date:   Mon Aug 23 21:51:00 2021 +0530                                                                                                                                                
-Create README.md                                                                                                                                                              
-commit 8366082b48d00f79a6bdb6844c511a4d4d107ce9                                          
-Author: shwetamasrani <shwetamasrani19@gmail.com>                                        
-Date:   Mon Aug 23 21:27:42 2021 +0530                                                                                                                                                
-Modularized the code and modified to accept and alien base system                                                                                                             
-commit f5c31fd9e7f722a44a1aa583ae82d37213de3837                                          
-Author: shwetamasrani <shwetamasrani19@gmail.com>                                        
-Date:   Mon Aug 23 20:30:07 2021 +0530                                                                                                                                                
+commit 866bf3cf5abdbefd7ecb0177eeac74bc460dd049 (HEAD -> main, origin/main)
+Author: shwetamasrani <shwetamasrani19@gmail.com>
+Date:   Mon Aug 23 22:12:08 2021 +0530
+
+Added function to clean input by removing leading zeros
+
+commit 1d4705731902ff136b705be6541b450872ba911d
+Author: shwetamasrani <shwetamasrani19@gmail.com>
+Date:   Mon Aug 23 22:02:25 2021 +0530
+                         
+Added Comments for readability
+
+commit df62c0d7b4aad2c7fa239b8e7ba07131f77662fb
+Author: Shweta Masrani <shwetamasrani19@gmail.com>
+Date:   Mon Aug 23 21:51:00 2021 +0530
+                         
+Create README.md
+
+commit 8366082b48d00f79a6bdb6844c511a4d4d107ce9
+Author: shwetamasrani <shwetamasrani19@gmail.com>
+Date:   Mon Aug 23 21:27:42 2021 +0530
+
+Modularized the code and modified to accept any alien base system
++ Added meaningful Variable names
++ Removed Redundant code
++ Made minimal complex solution
+
+commit f5c31fd9e7f722a44a1aa583ae82d37213de3837
+Author: shwetamasrani <shwetamasrani19@gmail.com>
+Date:   Mon Aug 23 20:30:07 2021 +0530
+
 Intial working code                                                                                                                 
